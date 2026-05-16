@@ -1,3 +1,6 @@
+#:______________________________________________________
+#  z3.nim  |  Copyright (C) Ivan Mar (sOkam!)  |  MIT  :
+#:______________________________________________________
 from std/os import `/`, parentDir
 import henka
 
