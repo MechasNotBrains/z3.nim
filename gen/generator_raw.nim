@@ -8,7 +8,7 @@ proc filter(kind: LabelKind, name: string): bool =
   if kind == Constant: return false
   result = true
 
-writeFile(outDir/"z3.nim", generate(
+writeFile(outDir/"z3"/"raw.nim", generate(
   inputFile    = z3Api/"z3.h",
   clangArgs    = @["-I" & z3Api],
   linkMode     = LinkMode.dynlib,
