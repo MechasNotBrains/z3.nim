@@ -14,7 +14,7 @@ cfg.dir.src   = "gen"
 cfg.log.level = B.ReportMode.verbose
 
 # @section Generator Builders
-B.program("generator.nim",
+B.program("generator_raw.nim",
     cfg  = cfg,
     deps = @[henka]
   ).build(run=true)
